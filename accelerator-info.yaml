@@ -1,0 +1,17 @@
+id: 8b81961f-cd8a-4d3c-98cd-8b50d9d146f0
+timestamp: 2024-04-01T18:38:26.212Z
+source: TAP-GUI
+username: guest
+options:
+  projectName: spring-smtp-gateway
+  containerPort: 1026
+  servicePort: 25
+  workloadNamespace: my-apps
+  brokerType: rabbitmq
+  msgbrokerName: msgbroker-spring-smtp-gateway
+  includeBuildToolWrapper: true
+accelerator:
+  name: spring-smtp-gateway
+fragments:
+  - name: build-wrapper-maven
+  - name: tap-workload
